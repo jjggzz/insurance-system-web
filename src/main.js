@@ -8,7 +8,7 @@ import router from './router'
 import axios from 'axios'
 Vue.prototype.$axios=axios;
 axios.defaults.baseURL = '/api';
-axios.defaults.timeout = 5000;
+axios.defaults.timeout = 50000;
 axios.defaults.withCredentials = true;
 
 

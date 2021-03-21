@@ -347,7 +347,7 @@
                 this.updatePolicyFormVisible = true;
             },
             handleDelete(index, row) {
-                this.$confirm('此操作将永久删除该用户, 是否继续?', '警告', {
+                this.$confirm('此操作将永久删除该保单, 是否继续?', '警告', {
                     confirmButtonText: '确定',
                     cancelButtonText: '取消',
                     type: 'error'

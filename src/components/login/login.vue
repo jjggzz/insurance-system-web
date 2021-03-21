@@ -57,7 +57,7 @@ export default {
   data() {
     return {
       loginForm: {
-        loginName: 'test',
+        loginName: 'admin',
         password: '123456'
       },
       passwordType: 'password',
