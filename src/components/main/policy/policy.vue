@@ -1,6 +1,6 @@
 <template>
     <el-container>
-        <el-header style="background-color: aliceblue">
+        <el-main>
             <el-form :inline="true" ref="form" :model="queryData" label-width="80px">
                 <el-form-item label="保单名">
                     <el-input size="mini" v-model="queryData.policyName"></el-input>
@@ -19,8 +19,6 @@
                     <el-button v-if="this.checkAuthority([2,3])" size="mini" type="primary" @click="addPolicyFormVisible = true">添加保单</el-button>
                 </el-form-item>
             </el-form>
-        </el-header>
-        <el-main>
             <el-table
                     :data="responseList"
                     :default-sort = "{prop: 'inputTime', order: 'descending'}"

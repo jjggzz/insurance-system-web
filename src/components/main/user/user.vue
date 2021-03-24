@@ -1,6 +1,6 @@
 <template>
     <el-container>
-        <el-header style="background-color: aliceblue">
+        <el-main>
             <el-form :inline="true" ref="form" :model="queryData" label-width="80px">
                 <el-form-item label="用户名">
                     <el-input size="mini" v-model="queryData.userName"></el-input>
@@ -29,8 +29,6 @@
                     <el-button v-if="this.checkAuthority([3])" size="mini" type="primary" @click="addUserFormVisible = true">添加用户</el-button>
                 </el-form-item>
             </el-form>
-        </el-header>
-        <el-main>
             <el-table
                     :data="responseList"
                     :default-sort = "{prop: 'inputTime', order: 'descending'}"
