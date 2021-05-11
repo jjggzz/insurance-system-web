@@ -15,12 +15,12 @@
                         </el-option>
                     </el-select>
                 </el-form-item>
-                <el-form-item label="状态">
-                    <el-select size="mini" clearable v-model="queryData.status" placeholder="请选择状态">
-                        <el-option label="未启用" value=0></el-option>
-                        <el-option label="已启用" value=1></el-option>
-                    </el-select>
-                </el-form-item>
+<!--                <el-form-item label="状态">-->
+<!--                    <el-select size="mini" clearable v-model="queryData.status" placeholder="请选择状态">-->
+<!--                        <el-option label="未启用" value=0></el-option>-->
+<!--                        <el-option label="已启用" value=1></el-option>-->
+<!--                    </el-select>-->
+<!--                </el-form-item>-->
                 <el-form-item label="录入时间">
                     <el-col :span="11">
                         <el-date-picker size="mini" type="date" placeholder="选择日期" v-model="queryData.startTime" style="width: 100%;"></el-date-picker>
@@ -68,14 +68,14 @@
                         {{scope.row.inputTime | dateFormat}}
                     </template>
                 </el-table-column>
-                <el-table-column
-                        prop="status"
-                        label="状态">
-                    <template slot-scope="scope">
-                        <span v-if="scope.row.status === 0">未启用</span>
-                        <span v-else-if="scope.row.status === 1">已启用</span>
-                    </template>
-                </el-table-column>
+<!--                <el-table-column-->
+<!--                        prop="status"-->
+<!--                        label="状态">-->
+<!--                    <template slot-scope="scope">-->
+<!--                        <span v-if="scope.row.status === 0">未启用</span>-->
+<!--                        <span v-else-if="scope.row.status === 1">已启用</span>-->
+<!--                    </template>-->
+<!--                </el-table-column>-->
                 <el-table-column
                         prop="accessKey"
                         label="文件">

@@ -25,9 +25,9 @@
                 if (rule == 0) {
                     return "投保人";
                 } else if (rule == 1) {
-                    return "投保人";
-                }else if (rule == 2) {
                     return "受益人";
+                }else if (rule == 2) {
+                    return "销售员";
                 }else if (rule == 3) {
                     return "管理员";
                 } else {
